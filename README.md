@@ -181,3 +181,13 @@ for tag in bs.find_all(lambda tag : len(tag.attrs) == 2):
     print(tag)
 ```
 
+## 编写网络爬虫
+
+urlparse的用法
+
+```python
+from url.parse import urlparse
+
+includeUrl = '{}://{}'.format(urlparse(includeUrl).scheme, urlparse(includeUrl).netloc)
+```
+
